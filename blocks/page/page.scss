@@ -1,0 +1,15 @@
+.page {
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: "Noto Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --bg-color-header: #000;
+  --text-color: #fff;
+  --button-color: #009465;
+  --button-hover-color: #066C4C;
+}
