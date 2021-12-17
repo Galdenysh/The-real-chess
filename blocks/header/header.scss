@@ -1,12 +1,13 @@
 .header {
-  padding-top: 26px; 
+  padding-top: 26px;
   background-color: var(--bg-color-header);
 
   &__container {
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin: 0 auto;
     max-width: 1080px;
   }
 
@@ -63,11 +64,24 @@
 
   @media screen and (max-width: 540px) {
     &__container {
-      margin: 0 30px;
+      margin: 0 20px;
+    }
+
+    &__logo {
+      width: 26px;
+      height: 36px;
     }
     
     &__link {
       display: none;
+    }
+
+    &__button {
+      min-width: 140px;
+      min-height: 30px;
+  
+      font-size: 10px;
+      line-height: 1.8;
     }
   }
 }

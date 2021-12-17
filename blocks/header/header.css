@@ -3,10 +3,10 @@
   background-color: var(--bg-color-header);
 }
 .header__container {
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
   max-width: 1080px;
 }
 .header__logo {
@@ -52,9 +52,19 @@
 }
 @media screen and (max-width: 540px) {
   .header__container {
-    margin: 0 30px;
+    margin: 0 20px;
+  }
+  .header__logo {
+    width: 26px;
+    height: 36px;
   }
   .header__link {
     display: none;
+  }
+  .header__button {
+    min-width: 140px;
+    min-height: 30px;
+    font-size: 10px;
+    line-height: 1.8;
   }
 }/*# sourceMappingURL=header.css.map */
