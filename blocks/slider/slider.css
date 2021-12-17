@@ -1,0 +1,57 @@
+.slider {
+  /* Checked */
+  /* Switch */
+}
+.slider__input {
+  display: none;
+}
+.slider__items {
+  overflow-x: scroll;
+}
+.slider__items::-webkit-scrollbar {
+  height: 0;
+}
+.slider__switch {
+  display: none;
+  margin-top: 30px;
+}
+.slider__switch-item {
+  cursor: pointer;
+  margin: 0 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  opacity: 0.2;
+}
+@media screen and (max-width: 540px) {
+  .slider {
+    margin: 0 auto;
+    max-width: 280px;
+  }
+  .slider__items {
+    overflow: hidden;
+  }
+  .slider__switch {
+    display: flex;
+    justify-content: center;
+  }
+}
+.slider__input_btn1:checked ~ .slider__switch .slider__switch-item[for=btn1] {
+  opacity: 1;
+}
+.slider__input_btn2:checked ~ .slider__switch .slider__switch-item[for=btn2] {
+  opacity: 1;
+}
+.slider__input_btn3:checked ~ .slider__switch .slider__switch-item[for=btn3] {
+  opacity: 1;
+}
+.slider__input_btn1:checked ~ .slider__items .cards {
+  transform: translate(0);
+}
+.slider__input_btn2:checked ~ .slider__items .cards {
+  transform: translateX(-306px);
+}
+.slider__input_btn3:checked ~ .slider__items .cards {
+  transform: translateX(-612px);
+}/*# sourceMappingURL=slider.css.map */

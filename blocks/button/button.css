@@ -12,12 +12,10 @@
   color: var(--text-color);
   transition: all 0.2s ease-in-out;
 }
-
 .button:hover {
   cursor: pointer;
   background-color: var(--button-hover-color);
 }
-
 @media screen and (max-width: 540px) {
   .button {
     min-width: 140px;

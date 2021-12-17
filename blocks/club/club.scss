@@ -8,7 +8,7 @@
 
     margin: 0 auto;
     min-height: 640px;
-    max-width: 1080px;
+    max-width: 1120px;
   }
 
   &__icon {
@@ -28,6 +28,14 @@
     line-height: 0.9;
     text-transform: uppercase;
     color: var(--text-color);
+  }
+
+  &__title {
+    margin-top: 70px;
+  }
+
+  &__subtitle {
+    margin-top: 40px;
   }
 
   &__chessboard {
@@ -54,6 +62,11 @@
       padding: 40px 0 20px;
       background: no-repeat right 20px top 40px url(../../images/picture_4.png) var(--bg-color-club);
     }
+    
+    &__container {
+      margin: 0 20px;
+      min-height: 430px;
+    }
 
     &__icon {
       margin-top: 10px;
@@ -64,9 +77,12 @@
       font-size: 12px;
     }
 
-    &__container {
-      margin: 0 20px;
-      min-height: 430px;
+    &__title {
+      margin-top: 60px;
+    }
+
+    &__subtitle {
+      margin-top: 20px;
     }
 
     &__chessboard {
