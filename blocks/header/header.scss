@@ -8,7 +8,7 @@
     justify-content: space-between;
 
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 1120px;
   }
 
   &__logo {
@@ -63,6 +63,10 @@
   }
 
   @media screen and (max-width: 540px) {
+    & {
+      padding-top: 16px;
+    }
+
     &__container {
       margin: 0 20px;
     }

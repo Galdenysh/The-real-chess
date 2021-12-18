@@ -1,13 +1,13 @@
 .club {
   padding: 60px 0 80px;
-  background: no-repeat right 0 top 60px url(../../images/picture_2.png) var(--bg-color-club);
+  background: no-repeat right 0 top 70px url(../../images/picture_2.png) var(--bg-color-club);
 
   &__container {
     display: flex;
     flex-direction: column;
 
     margin: 0 auto;
-    min-height: 640px;
+    min-height: 650px;
     max-width: 1120px;
   }
 
@@ -17,7 +17,7 @@
     justify-content: center;
 
     padding-right: 6px;
-    width: 84px;
+    width: 80px;
     height: 50px;
     border-radius: 0 25px 25px 0;
     background-color: var(--bg-color-team);
@@ -53,7 +53,7 @@
 
     &__container {
       margin: 0 50px;
-      min-height: 670px;
+      min-height: 680px;
     }
   }
 
@@ -70,7 +70,7 @@
 
     &__icon {
       margin-top: 10px;
-      width: 63px;
+      width: 60px;
       height: 40px;
       border-radius: 0 20px 20px 0;
 

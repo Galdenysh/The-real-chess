@@ -43,6 +43,10 @@
       margin-top: 140px;
       margin-right: -50px;
     }
+
+    &__chessboard {
+      margin-top: 140px;
+    }
   }
 
   @media screen and (max-width: 540px) {
@@ -53,6 +57,10 @@
 
     &__container {
       margin: 0 20px;
+    }
+
+    &__subtitle {
+      margin-top: 20px;
     }
 
     &__slider {

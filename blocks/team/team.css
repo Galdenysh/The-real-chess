@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 140px 0 0 auto;
-  padding-left: 660px;
+  padding-left: 600px;
   min-height: 440px;
 }
 @media screen and (max-width: 1140px) {
@@ -40,7 +40,7 @@
   }
   .team__join {
     margin-top: 100px;
-    padding-left: 150px;
+    padding-left: 190px;
     min-height: 360px;
   }
 }
@@ -51,6 +51,9 @@
   }
   .team__container {
     margin: 0 20px;
+  }
+  .team__subtitle {
+    margin-top: 20px;
   }
   .team__slider {
     margin-top: 60px;
