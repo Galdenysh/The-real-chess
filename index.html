@@ -30,16 +30,15 @@
             <div class="club__chessboard"></div>
           </div>
         </section>
+
         <section class="team">
           <div class="team__container">
             <h2 class="title team__title">Наша команда</h2>
             <p class="subtitle team__subtitle">Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть — одно удовольствие!</p>
-
             <div class="slider team__slider">
-              <input class="slider__input slider__input_btn1" type="radio" name="switch" id="btn1" checked />
-              <input class="slider__input slider__input_btn2" type="radio" name="switch" id="btn2" />
-              <input class="slider__input slider__input_btn3" type="radio" name="switch" id="btn3" />
-
+              <input class="slider__input slider__input_btn1" type="radio" name="team-switch" id="team-btn1" checked />
+              <input class="slider__input slider__input_btn2" type="radio" name="team-switch" id="team-btn2" />
+              <input class="slider__input slider__input_btn3" type="radio" name="team-switch" id="team-btn3" />
               <div class="slider__items">
                 <div class="cards">
                   <div class="cards__card">
@@ -59,18 +58,49 @@
                   </div>
                 </div>
               </div>
-
               <div class="slider__switch">
-                <label class="slider__switch-item" for="btn1"></label>
-                <label class="slider__switch-item" for="btn2"></label>
-                <label class="slider__switch-item" for="btn3"></label>
+                <label class="slider__switch-item" for="team-btn1"></label>
+                <label class="slider__switch-item" for="team-btn2"></label>
+                <label class="slider__switch-item" for="team-btn3"></label>
               </div>
             </div>
-
             <div class="team__join">
-              <h3 class="title">Хочешь в комаду?</h3>
+              <h3 class="title">Хочешь в команду?</h3>
               <p class="subtitle team__subtitle">Свяжись с нами и мы обсудим все детали присоеденения к команде.</p>
             </div>
+          </div>
+        </section>
+
+        <section class="battle">
+          <div class="battle__container">
+            <h2 class="title battle__title">Сражения</h2>
+            <p class="subtitle battle__subtitle">
+              Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои навыки — сыграйте с нашими шахматистами.
+            </p>
+            <div class="slider battle__slider">
+              <input class="slider__input slider__input_btn1" type="radio" name="battle-switch" id="battle-btn1" checked />
+              <input class="slider__input slider__input_btn2" type="radio" name="battle-switch" id="battle-btn2" />
+              <input class="slider__input slider__input_btn3" type="radio" name="battle-switch" id="battle-btn3" />
+              <div class="slider__items">
+                <div class="cards">
+                  <div class="cards__card">
+                    <img src="./images/photo_4.jpg" alt="Андрей" class="cards__image" />
+                  </div>
+                  <div class="cards__card">
+                    <img src="./images/photo_5.jpg" alt="Никита" class="cards__image" />
+                  </div>
+                  <div class="cards__card">
+                    <img src="./images/photo_6.jpg" alt="Алексей" class="cards__image" />
+                  </div>
+                </div>
+              </div>
+              <div class="slider__switch">
+                <label class="slider__switch-item" for="battle-btn1"></label>
+                <label class="slider__switch-item" for="battle-btn2"></label>
+                <label class="slider__switch-item" for="battle-btn3"></label>
+              </div>
+            </div>
+            <div class="battle__chessboard"></div>
           </div>
         </section>
       </main>

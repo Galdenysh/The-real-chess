@@ -1,5 +1,6 @@
 .cards {
   display: flex;
+  font-size: 0;
 }
 .cards__card {
   padding-right: 80px;

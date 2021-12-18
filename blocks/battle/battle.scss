@@ -1,0 +1,70 @@
+.battle {
+  padding: 80px 0;
+  background: no-repeat left 100px bottom 0 url(../../images/picture_8.png) var(--bg-color-battle);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    max-width: 1120px;
+  }
+
+  &__title {
+    max-width: 1000px;
+  }
+
+  &__subtitle {
+    margin-top: 40px;
+  }
+
+  &__slider {
+    margin-top: 110px;
+  }
+
+  &__chessboard {
+    margin: 110px 0 0 auto;
+    width: 416px;
+    height: 104px;
+    background: no-repeat url(../../images/picture_9.jpg);
+  }
+
+  @media screen and (max-width: 1140px) {
+    & {
+      padding: 50px 0 80px;
+      background: no-repeat left 0 bottom 0 url(../../images/picture_10.png) var(--bg-color-battle);
+    }
+
+    &__container {
+      margin: 0 50px;
+    }
+
+    &__slider {
+      margin-top: 140px;
+      margin-right: -50px;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    & {
+      padding: 20px 0;
+      background: none var(--bg-color-battle);
+    }
+
+    &__container {
+      margin: 0 20px;
+    }
+
+    &__slider {
+      margin-top: 60px;
+      margin-right: auto;
+    }
+
+    &__chessboard {
+      margin: 60px auto 0;
+      width: 280px;
+      height: 70px;
+      background-size: contain;
+    }
+  }
+}

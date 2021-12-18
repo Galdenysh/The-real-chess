@@ -1,6 +1,4 @@
 .slider {
-  // margin: 110px 0 0;
-
   &__input {
     display: none;
   }
@@ -46,20 +44,34 @@
     }
   }
 
-  /* Checked */
-  &__input_btn1:checked~&__switch &__switch-item[for="btn1"] {
+  // Checked 
+  &__input_btn1:checked~&__switch &__switch-item[for="team-btn1"] {
     opacity: 1;
   }
 
-  &__input_btn2:checked~&__switch &__switch-item[for="btn2"] {
+  &__input_btn2:checked~&__switch &__switch-item[for="team-btn2"] {
     opacity: 1;
   }
 
-  &__input_btn3:checked~&__switch &__switch-item[for="btn3"] {
+  &__input_btn3:checked~&__switch &__switch-item[for="team-btn3"] {
     opacity: 1;
   }
 
-  /* Switch */
+
+  // Checked 
+  &__input_btn1:checked~&__switch &__switch-item[for="battle-btn1"] {
+    opacity: 1;
+  }
+
+  &__input_btn2:checked~&__switch &__switch-item[for="battle-btn2"] {
+    opacity: 1;
+  }
+
+  &__input_btn3:checked~&__switch &__switch-item[for="battle-btn3"] {
+    opacity: 1;
+  }
+
+  // Switch
   &__input_btn1:checked~&__items .cards {
     transform: translate(0);
   }
