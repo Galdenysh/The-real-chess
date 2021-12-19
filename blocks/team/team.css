@@ -44,6 +44,11 @@
     min-height: 360px;
   }
 }
+@media screen and (max-width: 640px) {
+  .team__join {
+    padding-left: 120px;
+  }
+}
 @media screen and (max-width: 540px) {
   .team {
     padding: 20px 0 0;

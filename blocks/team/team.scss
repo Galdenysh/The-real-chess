@@ -55,6 +55,12 @@
     }
   }
 
+  @media screen and (max-width: 640px) {
+    &__join {
+      padding-left: 120px;
+    }
+  }
+
   @media screen and (max-width: 540px) {
     & {
       padding: 20px 0 0;

@@ -1,0 +1,131 @@
+.popup {
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: var(--bg-color-popup);
+
+  font-family: "Noto Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
+
+  &__logo {
+    margin: 120px auto 0;
+
+    height: 54px;
+    width: 38px;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin: 50px auto 0;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 0.9;
+    color: var(--text-color);
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: column;
+
+    margin: 80px auto 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__form-item {
+    margin-top: 20px;
+    padding: 0 0 0 28px;
+    min-width: 500px;
+    min-height: 48px;
+    border: none;
+    border-radius: 8px; 
+    background-color: var(--input-color);
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.2;
+    color: var(--text-color);
+
+    transition: background-color 0.2s ease-in-out;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &::placeholder {
+      color: var(--text-color);
+    }
+
+    &:focus {
+      outline: 1px solid var(--input-focus);
+    }
+
+    &:hover {
+      background-color: var(--input-hover-color);
+    }
+  }
+
+  &__button {
+    margin: auto auto 120px;
+  }
+
+  &_opened {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+
+  @media screen and (max-width: 1140px) {
+    &__logo {
+      margin-top: 200px;
+    }
+    
+    &__button {
+      margin-bottom: 200px;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    &__logo {
+      margin-top: 120px;
+
+      width: 26px;
+      height: 36px;
+    }
+
+    &__title {
+      margin-top: 40px;
+      font-size: 30px;
+    }
+
+    &__user-info {
+      margin-top: 40px;
+    }
+    
+    &__form-item {
+      margin-top: 10px;
+      min-width: 280px;
+      min-height: 42px;
+
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    &__button {
+      margin-bottom: 120px;
+    }
+  }
+}

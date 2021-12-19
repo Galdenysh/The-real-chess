@@ -12,8 +12,12 @@
   --bg-color-team: #5036e6;
   --bg-color-battle: #000;
   --bg-color-footer: #5036e6;
+  --bg-color-popup: #000;
   --text-color: #fff;
   --copy-color: #8E9199;
   --button-color: #009465;
   --button-hover-color: #066C4C;
+  --input-color: #1A1A1A;
+  --input-hover-color: #1A1A1A99;
+  --input-focus: #5036e6;
 }/*# sourceMappingURL=page.css.map */
