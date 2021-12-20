@@ -29,6 +29,12 @@
   line-height: 0.9;
   color: var(--text-color);
 }
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 255px);
+}
 .popup__user-info {
   display: flex;
   flex-direction: column;
@@ -70,7 +76,7 @@
   background-color: var(--input-hover-color);
 }
 .popup__button {
-  margin: auto auto 120px;
+  margin: 80px auto 120px;
 }
 .popup_opened {
   visibility: visible;
@@ -80,6 +86,9 @@
 @media screen and (max-width: 1140px) {
   .popup__logo {
     margin-top: 200px;
+  }
+  .popup__form {
+    min-height: calc(100vh - 335px);
   }
   .popup__button {
     margin-bottom: 200px;
@@ -95,6 +104,9 @@
     margin-top: 40px;
     font-size: 30px;
   }
+  .popup__form {
+    min-height: calc(100vh - 255px);
+  }
   .popup__user-info {
     margin-top: 40px;
   }
@@ -106,6 +118,6 @@
     line-height: 1.5;
   }
   .popup__button {
-    margin-bottom: 120px;
+    margin: 40px auto 120px;
   }
 }/*# sourceMappingURL=popup.css.map */

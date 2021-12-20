@@ -112,14 +112,18 @@
       </footer>
     </div>
 
-    <section class="popup popup_opened">
+    <section class="popup">
       <img class="popup__logo" src="./images/logo.svg" alt="логотип" />
       <h2 class="popup__title">Регистрация</h2>
-      <fieldset class="popup__user-info">
-        <input class="popup__form-item" type="text" name="user-name" placeholder="Имя" required />
-        <input class="popup__form-item" type="email" name="user-email" placeholder="Email" required />
-      </fieldset>
-      <button class="button popup__button" type="submit">Зарегистрироваться</button>
+      <form class="popup__form">
+        <fieldset class="popup__user-info">
+          <input class="popup__form-item" type="text" name="user-name" placeholder="Имя" required />
+          <input class="popup__form-item" type="email" name="user-email" placeholder="Email" required />
+        </fieldset>
+        <button class="button popup__button" type="submit">Зарегистрироваться</button>
+      </form>
     </section>
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

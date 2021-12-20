@@ -35,6 +35,14 @@
     color: var(--text-color);
   }
 
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: calc(100vh - 255px);
+  }
+
   &__user-info {
     display: flex;
     flex-direction: column;
@@ -79,7 +87,7 @@
   }
 
   &__button {
-    margin: auto auto 120px;
+    margin: 80px auto 120px;
   }
 
   &_opened {
@@ -91,6 +99,10 @@
   @media screen and (max-width: 1140px) {
     &__logo {
       margin-top: 200px;
+    }
+
+    &__form {
+      min-height: calc(100vh - 335px);
     }
     
     &__button {
@@ -111,6 +123,10 @@
       font-size: 30px;
     }
 
+    &__form {
+      min-height: calc(100vh - 255px);
+    }
+
     &__user-info {
       margin-top: 40px;
     }
@@ -125,7 +141,7 @@
     }
 
     &__button {
-      margin-bottom: 120px;
+      margin: 40px auto 120px;
     }
   }
 }
