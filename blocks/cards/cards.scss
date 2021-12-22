@@ -5,10 +5,10 @@
   overflow-x: auto;
   scroll-behavior: smooth;
 
-  scrollbar-width: none; // толщина полосы прокрутки для FireFox
+  scrollbar-width: none; // убираем полосу прокрутки для FireFox
 
-  &::-webkit-scrollbar { // толщина полосы прокрутки для Google Chrome
-    height: 0;
+  &::-webkit-scrollbar { // убираем полосу прокрутки для Google Chrome
+    display: none;
   }
 
   &__card {

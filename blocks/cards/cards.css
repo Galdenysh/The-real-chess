@@ -6,7 +6,7 @@
   scrollbar-width: none;
 }
 .cards::-webkit-scrollbar {
-  height: 0;
+  display: none;
 }
 .cards__card {
   padding-right: 80px;
