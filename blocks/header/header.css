@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 var(--desktop-margin);
   max-width: 1120px;
 }
 .header__logo {
@@ -36,7 +36,7 @@
 }
 @media screen and (max-width: 1140px) {
   .header__container {
-    margin: 0 50px;
+    margin: 0 var(--tablet-margin);
   }
   .header__link {
     margin-right: 30px;
@@ -55,7 +55,7 @@
     padding-top: 16px;
   }
   .header__container {
-    margin: 0 20px;
+    margin: 0 var(--mobile-margin);
   }
   .header__logo {
     width: 26px;

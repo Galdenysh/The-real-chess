@@ -5,7 +5,7 @@
 .battle__container {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 var(--desktop-margin);
   max-width: 1120px;
 }
 .battle__title {
@@ -29,7 +29,7 @@
     background: no-repeat left 0 bottom 0 url(../../images/picture_10.png) var(--bg-color-battle);
   }
   .battle__container {
-    margin: 0 50px;
+    margin: 0 var(--tablet-margin);
   }
   .battle__slider {
     margin-top: 140px;
@@ -54,7 +54,7 @@
     background: none var(--bg-color-battle);
   }
   .battle__container {
-    margin: 0 20px;
+    margin: 0 var(--mobile-margin);
   }
   .battle__subtitle {
     margin-top: 20px;

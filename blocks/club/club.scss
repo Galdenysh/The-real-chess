@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
 
-    margin: 0 auto;
+    margin: 0 var(--desktop-margin);
     min-height: 650px;
     max-width: 1120px;
   }
@@ -52,7 +52,7 @@
     }
 
     &__container {
-      margin: 0 50px;
+      margin: 0 var(--tablet-margin);
       min-height: 680px;
     }
   }
@@ -64,7 +64,7 @@
     }
     
     &__container {
-      margin: 0 20px;
+      margin: 0 var(--mobile-margin);
       min-height: 430px;
     }
 
