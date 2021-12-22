@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>The real chess</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__container">
+          <img class="header__logo" src="./images/logo.svg" alt="логотип" />
+          <a class="header__link" href="#" target="blank">
+            Вступайте в клуб
+            <svg class="header__icon-link">
+              <use href="./images/icon-link.svg#link"></use>
+            </svg>
+          </a>
+          <button class="button header__button" type="button">Зарегистрироваться</button>
+        </div>
+      </header>
+      <main class="content">
+        <section class="club">
+          <div class="club__container">
+            <div class="club__icon">Клуб</div>
+            <h1 class="title club__title">Правильные шахматы</h1>
+            <p class="subtitle club__subtitle">Приходите к нам, играть в шахматы! Сразитесь классическом поединке, блиц состязании и бою с гройсмейстером.</p>
+            <div class="club__chessboard"></div>
+          </div>
+        </section>
+
+        <section class="team">
+          <div class="team__container">
+            <h2 class="title team__title">Наша команда</h2>
+            <p class="subtitle team__subtitle">Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть — одно удовольствие!</p>
+            <div class="slider team__slider">
+              <div class="cards team__cards">
+                <article class="cards__card">
+                  <img src="./images/photo_1.jpg" alt="Андрей" class="cards__image" />
+                  <h3 class="cards__name">Андрей</h3>
+                  <p class="cards__signature">Шахматист, писатель.</p>
+                </article>
+                <article class="cards__card">
+                  <img src="./images/photo_2.jpg" alt="Никита" class="cards__image" />
+                  <h3 class="cards__name">Никита</h3>
+                  <p class="cards__signature">Шахматист, кулинар.</p>
+                </article>
+                <article class="cards__card">
+                  <img src="./images/photo_3.jpg" alt="Алексей" class="cards__image" />
+                  <h3 class="cards__name">Алексей</h3>
+                  <p class="cards__signature">Шахматист, геймер.</p>
+                </article>
+              </div>
+              <ul class="slider__switch">
+                <li class="slider__switch-item slider__switch-item_left slider__switch-item_active"></li>
+                <li class="slider__switch-item slider__switch-item_center"></li>
+                <li class="slider__switch-item slider__switch-item_right"></li>
+              </ul>
+            </div>
+            <div class="team__join">
+              <h3 class="title">Хочешь в команду?</h3>
+              <p class="subtitle team__subtitle">Свяжись с нами и мы обсудим все детали присоеденения к команде.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="battle">
+          <div class="battle__container">
+            <h2 class="title battle__title">Сражения</h2>
+            <p class="subtitle battle__subtitle">
+              Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои навыки — сыграйте с нашими шахматистами.
+            </p>
+            <div class="slider battle__slider">
+              <div class="cards battle__cards">
+                <article class="cards__card">
+                  <img src="./images/photo_4.jpg" alt="Фото шахмат" class="cards__image" />
+                </article>
+                <article class="cards__card">
+                  <img src="./images/photo_5.jpg" alt="Фото шахмат" class="cards__image" />
+                </article>
+                <article class="cards__card">
+                  <img src="./images/photo_6.jpg" alt="Фото шахмат" class="cards__image" />
+                </article>
+              </div>
+              <ul class="slider__switch">
+                <li class="slider__switch-item slider__switch-item_left slider__switch-item_active"></li>
+                <li class="slider__switch-item slider__switch-item_center"></li>
+                <li class="slider__switch-item slider__switch-item_right"></li>
+              </ul>
+            </div>
+            <div class="battle__chessboard"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <img class="footer__logo" src="./images/logo.svg" alt="логотип" />
+        <button class="button footer__button" type="button">Зарегистрироваться</button>
+        <p class="footer__paragraph">Шахматный клуб в Москве.</p>
+        <p class="footer__copy">© Chees Club.</p>
+      </footer>
+    </div>
+
+    <section class="popup">
+      <img class="popup__logo" src="./images/logo.svg" alt="логотип" />
+      <h2 class="popup__title">Регистрация</h2>
+      <form class="popup__form">
+        <fieldset class="popup__user-info">
+          <input class="popup__form-item" type="text" name="user-name" placeholder="Имя" required />
+          <input class="popup__form-item" type="email" name="user-email" placeholder="Email" required />
+        </fieldset>
+        <button class="button popup__button" type="submit">Зарегистрироваться</button>
+      </form>
+    </section>
+
+    <script src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/teamSlider.js"></script>
+    <script type="module" src="./scripts/battleSlider.js"></script>
+  </body>
+</html>

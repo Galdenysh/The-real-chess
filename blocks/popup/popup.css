@@ -1,0 +1,123 @@
+.popup {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: var(--bg-color-popup);
+  font-family: "Noto Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
+}
+.popup__logo {
+  margin: 120px auto 0;
+  height: 54px;
+  width: 38px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popup__title {
+  margin: 50px auto 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 0.9;
+  color: var(--text-color);
+}
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 255px);
+}
+.popup__user-info {
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto 0;
+  padding: 0;
+  border: none;
+}
+.popup__form-item {
+  margin-top: 20px;
+  padding: 0 0 0 28px;
+  min-width: 500px;
+  min-height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--input-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--text-color);
+  transition: background-color 0.2s ease-in-out;
+}
+.popup__form-item:first-child {
+  margin-top: 0;
+}
+.popup__form-item::-moz-placeholder {
+  color: var(--text-color);
+}
+.popup__form-item:-ms-input-placeholder {
+  color: var(--text-color);
+}
+.popup__form-item::placeholder {
+  color: var(--text-color);
+}
+.popup__form-item:focus {
+  outline: 1px solid var(--input-focus);
+}
+.popup__form-item:hover {
+  background-color: var(--input-hover-color);
+}
+.popup__button {
+  margin: 80px auto 120px;
+}
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+@media screen and (max-width: 1140px) {
+  .popup__logo {
+    margin-top: 200px;
+  }
+  .popup__form {
+    min-height: calc(100vh - 335px);
+  }
+  .popup__button {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .popup__logo {
+    margin-top: 120px;
+    width: 26px;
+    height: 36px;
+  }
+  .popup__title {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  .popup__form {
+    min-height: calc(100vh - 255px);
+  }
+  .popup__user-info {
+    margin-top: 40px;
+  }
+  .popup__form-item {
+    margin-top: 10px;
+    min-width: 280px;
+    min-height: 42px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .popup__button {
+    margin: 40px auto 120px;
+  }
+}/*# sourceMappingURL=popup.css.map */

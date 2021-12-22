@@ -1,0 +1,14 @@
+.title {
+  margin: 0;
+  max-width: 520px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 0.9;
+  color: var(--text-color);
+}
+@media screen and (max-width: 540px) {
+  .title {
+    font-size: 40px;
+  }
+}/*# sourceMappingURL=title.css.map */

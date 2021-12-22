@@ -1,0 +1,103 @@
+.club {
+  padding: 60px 0 80px;
+  background: no-repeat right 0 top 70px url(../../images/picture_2.png) var(--bg-color-club);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 var(--desktop-margin);
+    min-height: 650px;
+    max-width: 1120px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 6px;
+    width: 80px;
+    height: 50px;
+    border-radius: 0 25px 25px 0;
+    background-color: var(--bg-color-team);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+
+  &__title {
+    margin-top: 70px;
+  }
+
+  &__subtitle {
+    margin-top: 40px;
+  }
+
+  &__chessboard {
+    margin-top: auto;
+    width: 416px;
+    height: 104px;
+    background: no-repeat url(../../images/picture_1.jpg);
+  }
+
+  @media screen and (max-width: 1140px) {
+    & {
+      padding-bottom: 50px;
+      background: no-repeat right 0 bottom 50px url(../../images/picture_3.png) var(--bg-color-club);
+    }
+
+    &__container {
+      margin: 0 var(--tablet-margin);
+      min-height: 680px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    background-position: right -50px bottom 50px;
+
+    &__chessboard {
+      width: 320px;
+      height: 80px;
+      background-size: contain;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    & {
+      padding: 40px 0 20px;
+      background: no-repeat right 20px top 40px url(../../images/picture_4.png) var(--bg-color-club);
+    }
+    
+    &__container {
+      margin: 0 var(--mobile-margin);
+      min-height: 430px;
+    }
+
+    &__icon {
+      margin-top: 10px;
+      width: 60px;
+      height: 40px;
+      border-radius: 0 20px 20px 0;
+
+      font-size: 12px;
+    }
+
+    &__title {
+      margin-top: 60px;
+    }
+
+    &__subtitle {
+      margin-top: 20px;
+    }
+
+    &__chessboard {
+      width: 280px;
+      height: 70px;
+    }
+  }
+}

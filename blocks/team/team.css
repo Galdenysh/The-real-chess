@@ -1,0 +1,95 @@
+.team {
+  padding: 80px 0 60px;
+  background: no-repeat left 0 bottom 60px url(../../images/picture_5.png) var(--bg-color-team);
+}
+.team__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 var(--desktop-margin);
+  min-height: 640px;
+  max-width: 1120px;
+}
+.team__title {
+  max-width: 1000px;
+}
+.team__subtitle {
+  margin-top: 40px;
+}
+.team__slider {
+  margin-top: 110px;
+}
+.team__join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 140px 0 0 auto;
+  padding-left: 600px;
+  min-height: 440px;
+}
+@media screen and (max-width: 1280px) {
+  .team {
+    background-position: left -100px bottom 60px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .team {
+    padding: 50px 0;
+    background: no-repeat left 0 bottom 50px url(../../images/picture_6.png) var(--bg-color-team);
+  }
+  .team__container {
+    margin: 0 var(--tablet-margin);
+  }
+  .team__slider {
+    margin-top: 140px;
+    margin-right: calc(var(--tablet-margin) * -1);
+    margin-left: calc(var(--tablet-margin) * -1);
+  }
+  .team__cards::before {
+    content: "";
+    flex: 0 0 var(--tablet-margin);
+  }
+  .team__cards::after {
+    content: "";
+    flex: 0 0 var(--tablet-margin);
+  }
+  .team__join {
+    margin-top: 100px;
+    padding-left: 190px;
+    min-height: 360px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .team {
+    background-position: left -50px bottom 50px;
+  }
+  .team__join {
+    padding-left: 120px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .team {
+    padding: 20px 0 0;
+    background: no-repeat center bottom 0 url(../../images/picture_7.png) var(--bg-color-team);
+  }
+  .team__container {
+    margin: 0 var(--mobile-margin);
+  }
+  .team__subtitle {
+    margin-top: 20px;
+  }
+  .team__slider {
+    margin: 60px auto 0;
+  }
+  .team__cards::before {
+    content: none;
+  }
+  .team__cards::after {
+    content: none;
+  }
+  .team__join {
+    justify-content: start;
+    margin: 60px 0 0 0;
+    padding-left: 0;
+    min-height: 324px;
+  }
+}/*# sourceMappingURL=team.css.map */

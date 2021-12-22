@@ -1,0 +1,32 @@
+.button {
+  padding: 0;
+  min-width: 218px;
+  min-height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-color);
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--text-color);
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+  }
+
+  @media screen and (max-width: 540px) {
+    & {
+      min-width: 140px;
+      min-height: 30px;
+  
+      font-size: 10px;
+      line-height: 1.8;
+    }
+  }
+}
+

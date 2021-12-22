@@ -1,0 +1,125 @@
+.team {
+  padding: 80px 0 60px;
+  background: no-repeat left 0 bottom 60px url(../../images/picture_5.png) var(--bg-color-team);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 var(--desktop-margin);
+    min-height: 640px;
+    max-width: 1120px;
+  }
+
+  &__title {
+    max-width: 1000px;
+  }
+
+  &__subtitle {
+    margin-top: 40px;
+  }
+
+  &__slider {
+    margin-top: 110px;
+  }
+
+  &__join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 140px 0 0 auto;
+    padding-left: 600px;
+    min-height: 440px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    & {
+      background-position: left -100px bottom 60px;
+    }
+  }
+
+  @media screen and (max-width: 1140px) {
+    & {
+      padding: 50px 0;
+      background: no-repeat left 0 bottom 50px url(../../images/picture_6.png) var(--bg-color-team);
+    }
+
+    &__container {
+      margin: 0 var(--tablet-margin);
+    }
+
+    &__slider {
+      margin-top: 140px;
+      // Ниже добавил отрицательные отступы, чтобы отобразить слайдер вне контейнера
+      margin-right: calc(var(--tablet-margin) * -1);
+      margin-left: calc(var(--tablet-margin) * -1);
+    }
+
+    // Ниже добавил пустые элементы для выравнивания
+    &__cards {
+      &::before {
+        content: "";
+        flex: 0 0 var(--tablet-margin);
+      }
+    
+      &::after {
+        content: "";
+        flex: 0 0 var(--tablet-margin);
+      }
+    }
+
+    &__join {
+      margin-top: 100px;
+      padding-left: 190px;
+      min-height: 360px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    & {
+      background-position: left -50px bottom 50px;
+    }
+    
+    &__join {
+      padding-left: 120px;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    & {
+      padding: 20px 0 0;
+      background: no-repeat center bottom 0 url(../../images/picture_7.png) var(--bg-color-team);
+    }
+
+    &__container {
+      margin: 0 var(--mobile-margin);
+    }
+
+    &__subtitle {
+      margin-top: 20px;
+    }
+
+    &__slider {
+      margin: 60px auto 0;
+    }
+
+    &__cards {
+      &::before {
+        content: none;
+      }
+    
+      &::after {
+        content: none;
+      }
+    }
+
+    &__join {
+      justify-content: start;
+
+      margin: 60px 0 0 0;
+      padding-left: 0;
+      min-height: 324px;
+    }
+  }
+}

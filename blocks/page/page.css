@@ -1,0 +1,26 @@
+.page {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Noto Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --bg-color-header: #000;
+  --bg-color-club: #000;
+  --bg-color-team: #5036e6;
+  --bg-color-battle: #000;
+  --bg-color-footer: #5036e6;
+  --bg-color-popup: #000;
+  --text-color: #fff;
+  --copy-color: #8E9199;
+  --button-color: #009465;
+  --button-hover-color: #066C4C;
+  --input-color: #1A1A1A;
+  --input-hover-color: #1A1A1A99;
+  --input-focus: #5036e6;
+  --desktop-margin: auto;
+  --tablet-margin: 50px;
+  --mobile-margin: 20px;
+}/*# sourceMappingURL=page.css.map */
