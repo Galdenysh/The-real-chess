@@ -47,6 +47,16 @@
     min-height: 680px;
   }
 }
+@media screen and (max-width: 700px) {
+  .club {
+    background-position: right -50px bottom 50px;
+  }
+  .club__chessboard {
+    width: 320px;
+    height: 80px;
+    background-size: contain;
+  }
+}
 @media screen and (max-width: 540px) {
   .club {
     padding: 40px 0 20px;
@@ -72,6 +82,5 @@
   .club__chessboard {
     width: 280px;
     height: 70px;
-    background-size: contain;
   }
 }/*# sourceMappingURL=club.css.map */

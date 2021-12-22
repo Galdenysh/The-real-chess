@@ -53,7 +53,10 @@
     min-height: 360px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
+  .team {
+    background-position: left -50px bottom 50px;
+  }
   .team__join {
     padding-left: 120px;
   }
@@ -80,7 +83,7 @@
   }
   .team__join {
     justify-content: start;
-    margin-top: 60px;
+    margin: 60px 0 0 0;
     padding-left: 0;
     min-height: 324px;
   }

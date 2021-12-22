@@ -57,6 +57,16 @@
     }
   }
 
+  @media screen and (max-width: 700px) {
+    background-position: right -50px bottom 50px;
+
+    &__chessboard {
+      width: 320px;
+      height: 80px;
+      background-size: contain;
+    }
+  }
+
   @media screen and (max-width: 540px) {
     & {
       padding: 40px 0 20px;
@@ -88,7 +98,6 @@
     &__chessboard {
       width: 280px;
       height: 70px;
-      background-size: contain;
     }
   }
 }

@@ -70,7 +70,11 @@
     }
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 700px) {
+    & {
+      background-position: left -50px bottom 50px;
+    }
+    
     &__join {
       padding-left: 120px;
     }
@@ -107,7 +111,7 @@
     &__join {
       justify-content: start;
 
-      margin-top: 60px;
+      margin: 60px 0 0 0;
       padding-left: 0;
       min-height: 324px;
     }

@@ -48,6 +48,16 @@
     margin-top: 140px;
   }
 }
+@media screen and (max-width: 700px) {
+  .battle {
+    background-position: left -50px bottom 0;
+  }
+  .battle__chessboard {
+    width: 320px;
+    height: 80px;
+    background-size: contain;
+  }
+}
 @media screen and (max-width: 540px) {
   .battle {
     padding: 20px 0;
@@ -72,6 +82,5 @@
     margin: 60px auto 0;
     width: 280px;
     height: 70px;
-    background-size: contain;
   }
 }/*# sourceMappingURL=battle.css.map */
