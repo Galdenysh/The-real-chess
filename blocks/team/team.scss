@@ -33,6 +33,12 @@
     min-height: 440px;
   }
 
+  @media screen and (max-width: 1280px) {
+    & {
+      background-position: left -100px bottom 60px;
+    }
+  }
+
   @media screen and (max-width: 1140px) {
     & {
       padding: 50px 0;

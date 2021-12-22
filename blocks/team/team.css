@@ -26,6 +26,11 @@
   padding-left: 600px;
   min-height: 440px;
 }
+@media screen and (max-width: 1280px) {
+  .team {
+    background-position: left -100px bottom 60px;
+  }
+}
 @media screen and (max-width: 1140px) {
   .team {
     padding: 50px 0;
