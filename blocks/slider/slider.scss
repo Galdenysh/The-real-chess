@@ -3,18 +3,13 @@
     display: none;
   }
 
-  &__items {
-    overflow-x: scroll;
-
-    &::-webkit-scrollbar {
-      height: 0;
-    }
-  }
-
   &__switch {
     display: none;
 
-    margin-top: 30px;
+    margin: 30px 0 0;
+    padding: 0;
+
+    list-style-type: none;
   }
 
   &__switch-item {
@@ -26,6 +21,10 @@
     border-radius: 50%;
     background-color: var(--text-color);
     opacity: 0.2;
+
+    &_active {
+      opacity: 1;
+    }
   }
 
   @media screen and (max-width: 540px) {
@@ -34,54 +33,10 @@
       max-width: 280px;
     }
 
-    &__items {
-      overflow: hidden;
-    }
-
     &__switch {
       display: flex;
       justify-content: center;
     }
-  }
-
-  // Checked 
-  &__input_btn1:checked~&__switch &__switch-item[for="team-btn1"] {
-    opacity: 1;
-  }
-
-  &__input_btn2:checked~&__switch &__switch-item[for="team-btn2"] {
-    opacity: 1;
-  }
-
-  &__input_btn3:checked~&__switch &__switch-item[for="team-btn3"] {
-    opacity: 1;
-  }
-
-
-  // Checked 
-  &__input_btn1:checked~&__switch &__switch-item[for="battle-btn1"] {
-    opacity: 1;
-  }
-
-  &__input_btn2:checked~&__switch &__switch-item[for="battle-btn2"] {
-    opacity: 1;
-  }
-
-  &__input_btn3:checked~&__switch &__switch-item[for="battle-btn3"] {
-    opacity: 1;
-  }
-
-  // Switch
-  &__input_btn1:checked~&__items .cards {
-    transform: translate(0);
-  }
-
-  &__input_btn2:checked~&__items .cards {
-    transform: translateX(-306px);
-  }
-
-  &__input_btn3:checked~&__items .cards {
-    transform: translateX(-612px);
   }
 }
 

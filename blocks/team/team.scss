@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
 
-    margin: 0 auto;
+    margin: 0 var(--desktop-margin);
     min-height: 640px;
     max-width: 1120px;
   }
@@ -40,12 +40,27 @@
     }
 
     &__container {
-      margin: 0 50px;
+      margin: 0 var(--tablet-margin);
     }
 
     &__slider {
       margin-top: 140px;
-      margin-right: -50px;
+      // Ниже добавил отрицательные отступы, чтобы отобразить слайдер вне контейнера
+      margin-right: calc(var(--tablet-margin) * -1);
+      margin-left: calc(var(--tablet-margin) * -1);
+    }
+
+    // Ниже добавил пустые элементы для выравнивания
+    &__cards {
+      &::before {
+        content: "";
+        flex: 0 0 var(--tablet-margin);
+      }
+    
+      &::after {
+        content: "";
+        flex: 0 0 var(--tablet-margin);
+      }
     }
 
     &__join {
@@ -68,7 +83,7 @@
     }
 
     &__container {
-      margin: 0 20px;
+      margin: 0 var(--mobile-margin);
     }
 
     &__subtitle {
@@ -76,8 +91,17 @@
     }
 
     &__slider {
-      margin-top: 60px;
-      margin-right: auto;
+      margin: 60px auto 0;
+    }
+
+    &__cards {
+      &::before {
+        content: none;
+      }
+    
+      &::after {
+        content: none;
+      }
     }
 
     &__join {

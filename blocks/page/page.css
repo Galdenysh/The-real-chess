@@ -20,4 +20,7 @@
   --input-color: #1A1A1A;
   --input-hover-color: #1A1A1A99;
   --input-focus: #5036e6;
+  --desktop-margin: auto;
+  --tablet-margin: 50px;
+  --mobile-margin: 20px;
 }/*# sourceMappingURL=page.css.map */

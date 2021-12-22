@@ -1,9 +1,18 @@
 .cards {
   display: flex;
   font-size: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.cards::-webkit-scrollbar {
+  height: 0;
 }
 .cards__card {
   padding-right: 80px;
+}
+.cards__card:last-of-type {
+  padding-right: 0;
 }
 .cards__image {
   border-radius: 15px;
@@ -33,7 +42,11 @@
 }
 @media screen and (max-width: 540px) {
   .cards {
-    transition: all 0.5s ease-in-out;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  .cards__card {
+    scroll-snap-align: start;
   }
   .cards__image {
     max-width: 280px;

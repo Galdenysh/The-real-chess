@@ -1,9 +1,22 @@
 .cards {
   display: flex;
   font-size: 0;
+  
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none; // толщина полосы прокрутки для FireFox
+
+  &::-webkit-scrollbar { // толщина полосы прокрутки для Google Chrome
+    height: 0;
+  }
 
   &__card {
     padding-right: 80px;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
   }
 
   &__image {
@@ -40,7 +53,11 @@
 
   @media screen and (max-width: 540px) {
     & {
-      transition: all 0.5s ease-in-out;
+      scroll-snap-type: x mandatory;
+    }
+
+    &__card {
+      scroll-snap-align: start;
     }
 
     &__image {

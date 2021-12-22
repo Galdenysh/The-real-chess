@@ -41,7 +41,20 @@
 
     &__slider {
       margin-top: 140px;
-      margin-right: -50px;
+      margin-right: calc(var(--tablet-margin) * -1);
+      margin-left: calc(var(--tablet-margin) * -1);
+    }
+
+    &__cards {
+      &::before {
+        content: "";
+        flex: 0 0 var(--tablet-margin);
+      }
+    
+      &::after {
+        content: "";
+        flex: 0 0 var(--tablet-margin);
+      }
     }
 
     &__chessboard {
@@ -64,8 +77,17 @@
     }
 
     &__slider {
-      margin-top: 60px;
-      margin-right: auto;
+      margin: 60px auto 0;
+    }
+
+    &__cards {
+      &::before {
+        content: none;
+      }
+    
+      &::after {
+        content: none;
+      }
     }
 
     &__chessboard {

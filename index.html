@@ -36,33 +36,28 @@
             <h2 class="title team__title">Наша команда</h2>
             <p class="subtitle team__subtitle">Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть — одно удовольствие!</p>
             <div class="slider team__slider">
-              <input class="slider__input slider__input_btn1" type="radio" name="team-switch" id="team-btn1" checked />
-              <input class="slider__input slider__input_btn2" type="radio" name="team-switch" id="team-btn2" />
-              <input class="slider__input slider__input_btn3" type="radio" name="team-switch" id="team-btn3" />
-              <div class="slider__items">
-                <div class="cards">
-                  <article class="cards__card">
-                    <img src="./images/photo_1.jpg" alt="Андрей" class="cards__image" />
-                    <p class="cards__name">Андрей</p>
-                    <p class="cards__signature">Шахматист, писатель.</p>
-                  </article>
-                  <article class="cards__card">
-                    <img src="./images/photo_2.jpg" alt="Никита" class="cards__image" />
-                    <p class="cards__name">Никита</p>
-                    <p class="cards__signature">Шахматист, кулинар.</p>
-                  </article>
-                  <article class="cards__card">
-                    <img src="./images/photo_3.jpg" alt="Алексей" class="cards__image" />
-                    <p class="cards__name">Алексей</p>
-                    <p class="cards__signature">Шахматист, геймер.</p>
-                  </article>
-                </div>
+              <div class="cards team__cards">
+                <article class="cards__card">
+                  <img src="./images/photo_1.jpg" alt="Андрей" class="cards__image" />
+                  <h3 class="cards__name">Андрей</h3>
+                  <p class="cards__signature">Шахматист, писатель.</p>
+                </article>
+                <article class="cards__card">
+                  <img src="./images/photo_2.jpg" alt="Никита" class="cards__image" />
+                  <h3 class="cards__name">Никита</h3>
+                  <p class="cards__signature">Шахматист, кулинар.</p>
+                </article>
+                <article class="cards__card">
+                  <img src="./images/photo_3.jpg" alt="Алексей" class="cards__image" />
+                  <h3 class="cards__name">Алексей</h3>
+                  <p class="cards__signature">Шахматист, геймер.</p>
+                </article>
               </div>
-              <div class="slider__switch">
-                <label class="slider__switch-item" for="team-btn1"></label>
-                <label class="slider__switch-item" for="team-btn2"></label>
-                <label class="slider__switch-item" for="team-btn3"></label>
-              </div>
+              <ul class="slider__switch">
+                <li class="slider__switch-item slider__switch-item_left slider__switch-item_active"></li>
+                <li class="slider__switch-item slider__switch-item_center"></li>
+                <li class="slider__switch-item slider__switch-item_right"></li>
+              </ul>
             </div>
             <div class="team__join">
               <h3 class="title">Хочешь в команду?</h3>
@@ -78,27 +73,22 @@
               Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои навыки — сыграйте с нашими шахматистами.
             </p>
             <div class="slider battle__slider">
-              <input class="slider__input slider__input_btn1" type="radio" name="battle-switch" id="battle-btn1" checked />
-              <input class="slider__input slider__input_btn2" type="radio" name="battle-switch" id="battle-btn2" />
-              <input class="slider__input slider__input_btn3" type="radio" name="battle-switch" id="battle-btn3" />
-              <div class="slider__items">
-                <div class="cards">
-                  <article class="cards__card">
-                    <img src="./images/photo_4.jpg" alt="Андрей" class="cards__image" />
-                  </article>
-                  <article class="cards__card">
-                    <img src="./images/photo_5.jpg" alt="Никита" class="cards__image" />
-                  </article>
-                  <article class="cards__card">
-                    <img src="./images/photo_6.jpg" alt="Алексей" class="cards__image" />
-                  </article>
-                </div>
+              <div class="cards battle__cards">
+                <article class="cards__card">
+                  <img src="./images/photo_4.jpg" alt="Фото шахмат" class="cards__image" />
+                </article>
+                <article class="cards__card">
+                  <img src="./images/photo_5.jpg" alt="Фото шахмат" class="cards__image" />
+                </article>
+                <article class="cards__card">
+                  <img src="./images/photo_6.jpg" alt="Фото шахмат" class="cards__image" />
+                </article>
               </div>
-              <div class="slider__switch">
-                <label class="slider__switch-item" for="battle-btn1"></label>
-                <label class="slider__switch-item" for="battle-btn2"></label>
-                <label class="slider__switch-item" for="battle-btn3"></label>
-              </div>
+              <ul class="slider__switch">
+                <li class="slider__switch-item slider__switch-item_left slider__switch-item_active"></li>
+                <li class="slider__switch-item slider__switch-item_center"></li>
+                <li class="slider__switch-item slider__switch-item_right"></li>
+              </ul>
             </div>
             <div class="battle__chessboard"></div>
           </div>
@@ -125,5 +115,7 @@
     </section>
 
     <script src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/teamSlider.js"></script>
+    <script type="module" src="./scripts/battleSlider.js"></script>
   </body>
 </html>

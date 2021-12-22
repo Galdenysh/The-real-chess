@@ -33,7 +33,16 @@
   }
   .battle__slider {
     margin-top: 140px;
-    margin-right: -50px;
+    margin-right: calc(var(--tablet-margin) * -1);
+    margin-left: calc(var(--tablet-margin) * -1);
+  }
+  .battle__cards::before {
+    content: "";
+    flex: 0 0 var(--tablet-margin);
+  }
+  .battle__cards::after {
+    content: "";
+    flex: 0 0 var(--tablet-margin);
   }
   .battle__chessboard {
     margin-top: 140px;
@@ -51,8 +60,13 @@
     margin-top: 20px;
   }
   .battle__slider {
-    margin-top: 60px;
-    margin-right: auto;
+    margin: 60px auto 0;
+  }
+  .battle__cards::before {
+    content: none;
+  }
+  .battle__cards::after {
+    content: none;
   }
   .battle__chessboard {
     margin: 60px auto 0;

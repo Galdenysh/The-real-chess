@@ -5,7 +5,7 @@
 .team__container {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 var(--desktop-margin);
   min-height: 640px;
   max-width: 1120px;
 }
@@ -32,11 +32,20 @@
     background: no-repeat left 0 bottom 50px url(../../images/picture_6.png) var(--bg-color-team);
   }
   .team__container {
-    margin: 0 50px;
+    margin: 0 var(--tablet-margin);
   }
   .team__slider {
     margin-top: 140px;
-    margin-right: -50px;
+    margin-right: calc(var(--tablet-margin) * -1);
+    margin-left: calc(var(--tablet-margin) * -1);
+  }
+  .team__cards::before {
+    content: "";
+    flex: 0 0 var(--tablet-margin);
+  }
+  .team__cards::after {
+    content: "";
+    flex: 0 0 var(--tablet-margin);
   }
   .team__join {
     margin-top: 100px;
@@ -55,14 +64,19 @@
     background: no-repeat center bottom 0 url(../../images/picture_7.png) var(--bg-color-team);
   }
   .team__container {
-    margin: 0 20px;
+    margin: 0 var(--mobile-margin);
   }
   .team__subtitle {
     margin-top: 20px;
   }
   .team__slider {
-    margin-top: 60px;
-    margin-right: auto;
+    margin: 60px auto 0;
+  }
+  .team__cards::before {
+    content: none;
+  }
+  .team__cards::after {
+    content: none;
   }
   .team__join {
     justify-content: start;
